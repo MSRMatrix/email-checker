@@ -1,3 +1,15 @@
 .formComponent{
-    
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    textarea{
+        width: max-content;
+        min-width: 500px;
+        min-height: 100px;
+        scrollbar-width: none;
+        border-radius: 5px;
+    }
+    button{
+        
+    }
 }
