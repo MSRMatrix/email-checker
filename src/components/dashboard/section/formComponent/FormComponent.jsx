@@ -17,17 +17,10 @@ function FormComponent() {
           return { email, ...data };
         })
       );
-
-      if(response.ok){
         setResult(response)
-        return console.log(`Informations ready!`);
-        
-      }else{
         console.log(response);
-       return console.log(`Error occured!`);
         
-      }
-      
+        return console.log(`Informations ready!`);
     } catch (error) {
       console.error("Error checking emails:", error);
     }

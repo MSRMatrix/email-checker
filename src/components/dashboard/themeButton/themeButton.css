@@ -6,6 +6,7 @@
     background-color: #e0e0e0;
     transition: background-color 0.3s ease-in-out;
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .inner-div {
@@ -18,7 +19,7 @@
     background: linear-gradient(145deg, #5a00ff, #3700b3);
     box-shadow: 0 2px 6px rgba(55, 0, 255, 0.5);
     transition: left 0.3s ease-in-out, background 0.3s ease-in-out;
-    cursor: pointer;
+    
 }
 
 /* Light & Dark Theme Hintergrundfarben */

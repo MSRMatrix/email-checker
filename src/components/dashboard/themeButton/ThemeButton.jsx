@@ -17,11 +17,13 @@ const ThemeButton = () => {
       className.outer === "outer-dark-mode" &&
       className.inner === "inner-dark-mode"
     ) {
+        setTheme("light")
       setClassName({
         outer: "outer-light-mode",
         inner: "inner-light-mode"
       });
     } else {
+      setTheme("dark")
       setClassName({
         outer: "outer-dark-mode",
         inner: "inner-dark-mode"
@@ -30,9 +32,9 @@ const ThemeButton = () => {
   }
 
   return (
-    <div className={`outer-div ${className.outer}`}>
+    <div onClick={editClassName} className={`outer-div ${className.outer}`}>
       <div
-        onClick={editClassName}
+        
         className={`inner-div ${className.inner}`}
       ></div>
     </div>

@@ -1,12 +1,17 @@
 body{
-  background-color: #242424;
   color: aliceblue;
 }
 
 .light{
-
+  background-color: #e0e0e0;
+  color: #242424;
 }
 
 .dark{
   background-color: #242424;
+  color: #e0e0e0;
+}
+
+.dark,.light{
+  transition: 0.5s all ease-in-out;
 }
