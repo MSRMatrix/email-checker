@@ -1,17 +1,27 @@
-body{
+body {
   color: aliceblue;
 }
 
-.light{
+.light {
   background-color: #e0e0e0;
   color: #242424;
+  textarea::placeholder {
+    color: #e0e0e0;
+  }
 }
 
-.dark{
+.dark {
   background-color: #242424;
   color: #e0e0e0;
+  textarea::placeholder {
+    color: #242424;
+  }
 }
 
-.dark,.light{
+.dark,
+.light {
   transition: 0.5s all ease-in-out;
+  textarea::placeholder {
+    transition: 0.5s all ease-in-out;
+  }
 }

@@ -1,10 +1,11 @@
 import { useContext, useState } from "react";
 import "./formComponent.css";
-import { Result } from "../../../context/Context";
+import { Result, Theme } from "../../../context/Context";
 const URL = import.meta.env.VITE_URL;
 
 function FormComponent() {
   const {result, setResult} = useContext(Result)
+  const {theme, setTheme} = useContext(Theme)
   async function checkEmails(e) {
     e.preventDefault();
     const emails = e.target.elements.textarea.value.trim().split(/\s+/);
@@ -27,10 +28,12 @@ function FormComponent() {
   }
 
   return (
-    <form className="formComponent" onSubmit={checkEmails}>
+    <form className={`formComponent ${theme.anything}`} onSubmit={checkEmails}>
       <legend>Check these Emails</legend>
-      <textarea required name="textarea" placeholder="Enter emails separated by space or newlines" />
-      <button type="submit">Check</button>
+      <fieldset>
+      <textarea required name="textarea" placeholder="Enter emails separated by space or newlines" className={theme.anything} />
+      <button type="submit">Check</button>  
+      </fieldset>
     </form>
   );
 }

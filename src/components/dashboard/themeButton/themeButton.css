@@ -34,12 +34,13 @@
 /* Switcher bewegt sich */
 .inner-light-mode {
     left: 38px;
-    background: linear-gradient(145deg, #ffcc00, #ff9900); /* z. B. Sonne */
-    box-shadow: 0 2px 6px rgba(255, 204, 0, 0.5);
+    background: linear-gradient(145deg, #5a00ff, #3700b3); /* z. B. Mond */
+    box-shadow: 0 2px 6px rgba(55, 0, 255, 0.5);
+    
 }
 
 .inner-dark-mode {
     left: 2px;
-    background: linear-gradient(145deg, #5a00ff, #3700b3); /* z. B. Mond */
-    box-shadow: 0 2px 6px rgba(55, 0, 255, 0.5);
+    background: linear-gradient(145deg, #ffcc00, #ff9900); /* z. B. Sonne */
+    box-shadow: 0 2px 6px rgba(255, 204, 0, 0.5);
 }

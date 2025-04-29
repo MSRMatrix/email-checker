@@ -5,7 +5,9 @@ import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
 const [result, setResult] = useState([])
-const [theme, setTheme] = useState("dark")
+const [theme, setTheme] = useState(
+  { background: "dark", anything: "light" }
+)
 
   return (
     <>
