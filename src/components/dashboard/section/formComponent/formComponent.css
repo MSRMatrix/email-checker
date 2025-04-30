@@ -12,10 +12,13 @@
     }
     textarea{
         width: max-content;
-        min-width: 300px;
+        /* min-width: 300px;
         min-height: 20px;
         max-width: 300px;
-        max-height: 40px;
+        max-height: 40px; */
+        height: 100%;
+        width: 100%;
+        min-width: 200px;
         scrollbar-width: none;
         border-radius: 5px;
         border: 3px #ff9900 solid;

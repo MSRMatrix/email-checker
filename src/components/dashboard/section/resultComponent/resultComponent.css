@@ -1,22 +1,29 @@
 .result-container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .result-window{
     border-radius: 10px;
-    width: 300px;
+    max-width: 300px;
+    min-width: 100px;
+    /* Muss noch bearbeitet werden */
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
     gap: 10px;
-    p{
+    .result-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     p{
         display: flex;
         align-items: center;
         gap: 5px;
+    }   
     }
+    
 }
 
 .fa-xmark{
