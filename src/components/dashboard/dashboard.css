@@ -1,5 +1,6 @@
 .dashboard{
     height: 100%;
-    width: 100vw;
+    width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
 }

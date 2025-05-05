@@ -7,6 +7,7 @@ import Section from "./section/Section";
 import ThemeButton from "./themeButton/ThemeButton";
 import Infobox from "./infobox/Infobox";
 import Footer from "./footer/Footer";
+import { Outlet } from "react-router-dom";
 
 function Dashboard() {
   const { theme, setTheme } = useContext(Theme);
@@ -14,9 +15,8 @@ function Dashboard() {
     <div className={`dashboard ${theme.background}`}>
       <Header />
       <ThemeButton />
-      <Section />
+      <Outlet />
       <Advertising />
-      <Infobox />
       <Footer />
     </div>
   );
