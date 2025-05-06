@@ -13,10 +13,15 @@
   }
 } */
 
-html{
-  height: 100%;
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   justify-content: center;
-  width: 100vw;
-  min-width: max-content;
+  width: fit-content;
+  margin-top: 10px;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
