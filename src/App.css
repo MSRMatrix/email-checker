@@ -4,7 +4,6 @@
   textarea::placeholder {
     color: #e0e0e0;
   }
-  width: max-content;
 }
 
 .dark {
@@ -13,12 +12,13 @@
   textarea::placeholder {
     color: #242424;
   }
-  width: max-content;
+  
 }
 
 .dark,
 .light {
   transition: 0.5s all ease-in-out;
+  width: max-content; 
   textarea::placeholder {
     transition: 0.5s all ease-in-out;
   }

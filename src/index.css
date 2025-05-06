@@ -12,3 +12,8 @@
   font-size: 95%;
   }
 } */
+
+body{
+  display: flex;
+  align-items: center;
+}
