@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Theme } from "../context/Context";
 import "./dashboard.css";
 import Advertising from "./advertising/Advertising";
@@ -11,6 +11,11 @@ import { Outlet } from "react-router-dom";
 
 function Dashboard() {
   const { theme, setTheme } = useContext(Theme);
+
+  useEffect(() => {
+      document.body.classList.add(theme.background);
+  }, [!document.body.classList.value])
+
   return (
     <div className={`dashboard ${theme.background}`}>
       <Header />

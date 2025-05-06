@@ -18,14 +18,14 @@ const ThemeButton = () => {
       setTheme({ background: "light", anything: "dark" });
       setClassName({
         outer: "outer-light-mode",
-        inner: "inner-light-mode",
+        inner: "inner-light-mode", 
       });
     } else {
       setTheme({ background: "dark", anything: "light" });
       setClassName({
         outer: "outer-dark-mode",
         inner: "inner-dark-mode",
-      });
+      }); 
     }
   }
 
