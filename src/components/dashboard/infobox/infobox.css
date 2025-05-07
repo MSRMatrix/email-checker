@@ -23,7 +23,7 @@ justify-items: center;
         grid-template-columns: 1fr 1fr;
         .infobox{
              /* width: 40vw;  */
-             zoom: 94%;
+             zoom: 86%;
         }  
     }
 }
