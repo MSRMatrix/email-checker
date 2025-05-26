@@ -5,3 +5,13 @@
         font-size: 60px;
     }
 }
+
+@media (max-width: 400px){
+    .header{
+    h1{
+        font-size: 40px;
+    }
+}
+
+}
+

@@ -9,7 +9,7 @@ const ResultComponent = () => {
     return(
         <div className={`result-container`}>
         {result.map((item, key) => (
-           <div key={key} className={`result-window ${theme.anything}`} style={{border: theme === "dark" ? "3px #e0e0e0 solid" : "3px #242424 solid"}}>
+           <div key={key} className={`result-window`}>
             <h2>{item.email}</h2>
             <p>Domain: {item.domain ? item.domain : "Not available"}</p>
             <div className="result-details">

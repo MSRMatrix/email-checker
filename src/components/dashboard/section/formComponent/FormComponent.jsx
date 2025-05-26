@@ -40,10 +40,11 @@ function FormComponent() {
       <fieldset>
       <textarea required name="textarea" placeholder="Enter emails separated by space or newlines" className={theme.anything} />
       <button type="submit">Check</button>  
-      {/* <button type="reset">Clear</button> */}
+     
       </fieldset>
     </form>
   );
 }
 
 export default FormComponent;
+ {/* <button type="reset">Clear</button> */}

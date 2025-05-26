@@ -1,26 +1,19 @@
 .result-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    width: fit-content;
-    justify-self: center;
     margin-top: 10px;
-}
-
-@media (max-width: 1100px){
-    .result-container{
-        grid-template-columns: 1fr 1fr; 
-        zoom: 90%;
-    }  
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Zeilen einbauen wie bei pwned statt einzelne Blöcke */
 .result-window{
-    border-radius: 10px;
+    /* border-radius: 10px;
     max-width: 200px;
     min-width: 100px;
     height: 200px;
-    /* Muss noch bearbeitet werden */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -35,7 +28,7 @@
         gap: 5px;
     }   
     }
-    
+     */
 }
 
 .fa-xmark{
