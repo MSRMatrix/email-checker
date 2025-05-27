@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./formComponent.css";
 import { Result, Theme } from "../../../context/Context";
 const URL = import.meta.env.VITE_URL;
@@ -9,15 +9,15 @@ function FormComponent() {
   async function checkEmails(e) {
     e.preventDefault();
     const emails = e.target.elements.textarea.value.trim().split(/\s+/);
+    const ifEmail = [...new Set(emails.filter(email => email.includes("@")))];
 
-    const uniqueEmails = emails.reduce((acc, email) => {
+    const uniqueEmails = ifEmail.reduce((acc, email) => {
       if (!acc.includes(email)) {
         acc.push(email);
       }
       return acc;
     }, []);
 
-    
     try {
       const response = await Promise.all(
         uniqueEmails.map(async (email) => {
