@@ -4,6 +4,8 @@
   flex-direction: column;
   padding: 10px;
   border-radius: 10px;
+   min-width: 180px;
+    max-width: 300px;
   legend {
     text-align: center;
   }
@@ -21,11 +23,14 @@
     padding: 10px;
     resize: none;
     min-width: 180px;
-    width: 100vw;
     max-width: 300px;
   }
   button {
     border-radius: 10px;
     padding: 10px;
+
+    i{
+      font-size: 18px;
+    }
   }
 }

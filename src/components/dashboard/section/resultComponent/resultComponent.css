@@ -9,27 +9,28 @@
 }
 
 /* Zeilen einbauen wie bei pwned statt einzelne Blöcke */
-.result-window{
-    /* border-radius: 10px;
-    max-width: 200px;
-    min-width: 100px;
-    height: 200px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    gap: 10px;
-    .result-details{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-     p{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }   
-    }
-     */
+.result-window {
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
+.result-details p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.result-details i {
+  color: #999;
+}
+
 
 .fa-xmark{
     color: red;

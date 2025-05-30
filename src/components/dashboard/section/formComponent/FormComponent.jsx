@@ -39,7 +39,7 @@ function FormComponent() {
       <legend>Check these Emails</legend>
       <fieldset>
       <textarea required name="textarea" placeholder="Enter emails separated by space or newlines" className={theme.anything} />
-      <button type="submit">Check</button>  
+      <button type="submit">Check <i className="fa-solid fa-magnifying-glass"></i></button>  
      
       </fieldset>
     </form>
